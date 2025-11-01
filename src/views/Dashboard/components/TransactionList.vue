@@ -201,7 +201,7 @@ const transactionStore = useTransactionStore()
 const showFilters = ref(false)
 const formVisible = ref(false)
 const selectedTransaction = ref<Transaction | null>(null)
-const sorting = ref<SortingState>([])
+const sorting = ref<SortingState>([{ id: 'createdAt', desc: true }])
 const filters = ref<FilterForm>({})
 
 const transactions = computed(() => transactionStore.transactions)
