@@ -1,0 +1,26 @@
+.actions-cell {
+  display: flex;
+  gap: 4px;
+}
+
+.amount-cell {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.amount-income {
+  color: #52c41a;
+}
+
+.amount-expense {
+  color: #ff4d4f;
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid;
+}

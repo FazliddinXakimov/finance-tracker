@@ -1,0 +1,133 @@
+.transaction-modal :deep(.ant-modal-header) {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px 12px 0 0;
+  padding: 20px 24px;
+}
+
+.transaction-modal :deep(.ant-modal-title) {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.transaction-modal :deep(.ant-modal-close) {
+  color: white;
+}
+
+.transaction-modal :deep(.ant-modal-close:hover) {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.transaction-modal :deep(.ant-modal-content) {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.transaction-modal :deep(.ant-modal-body) {
+  padding: 24px;
+}
+
+.transaction-modal :deep(.ant-modal-footer) {
+  border-top: 1px solid #f0f0f0;
+  padding: 16px 24px;
+}
+
+.transaction-modal :deep(.ant-form-item-label > label) {
+  font-weight: 500;
+  color: #262626;
+}
+
+.transaction-modal :deep(.ant-radio-button-wrapper) {
+  border-radius: 8px;
+  font-weight: 500;
+  min-width: 100px;
+  text-align: center;
+}
+
+.transaction-modal :deep(.ant-radio-button-wrapper:first-child) {
+  border-radius: 8px 0 0 8px;
+}
+
+.transaction-modal :deep(.ant-radio-button-wrapper:last-child) {
+  border-radius: 0 8px 8px 0;
+}
+
+.transaction-modal :deep(.ant-radio-button-wrapper-checked) {
+  background: linear-gradient(135deg, #52c41a 0%, #389e0d 100%);
+  border-color: #52c41a;
+  color: white;
+}
+
+.transaction-modal
+  :deep(.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)) {
+  background: linear-gradient(135deg, #52c41a 0%, #389e0d 100%);
+  border-color: #52c41a;
+}
+
+.transaction-modal :deep(.ant-select-selector),
+.transaction-modal :deep(.ant-input-number),
+.transaction-modal :deep(.ant-picker),
+.transaction-modal :deep(.ant-input) {
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+  transition: all 0.3s ease;
+}
+
+.transaction-modal :deep(.ant-select-selector:hover),
+.transaction-modal :deep(.ant-input-number:hover),
+.transaction-modal :deep(.ant-picker:hover),
+.transaction-modal :deep(.ant-input:hover) {
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.1);
+}
+
+.transaction-modal :deep(.ant-select-focused .ant-select-selector),
+.transaction-modal :deep(.ant-input-number-focused),
+.transaction-modal :deep(.ant-picker-focused),
+.transaction-modal :deep(.ant-input:focus) {
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+.transaction-modal :deep(.submit-button) {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 8px 24px;
+  height: auto;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.transaction-modal :deep(.submit-button:hover) {
+  background: linear-gradient(135deg, #5568d3 0%, #6a3f8f 100%);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  transform: translateY(-1px);
+}
+
+.transaction-modal :deep(.cancel-button) {
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 8px 24px;
+  height: auto;
+}
+
+:deep(.ant-form-item) {
+  margin-bottom: 20px;
+}
+
+:deep(.ant-form-item-has-error .ant-select-selector),
+:deep(.ant-form-item-has-error .ant-input-number),
+:deep(.ant-form-item-has-error .ant-picker),
+:deep(.ant-form-item-has-error .ant-input) {
+  border-color: #ff4d4f;
+}
+
+:deep(.ant-form-item-has-error .ant-select-selector:hover),
+:deep(.ant-form-item-has-error .ant-input-number:hover),
+:deep(.ant-form-item-has-error .ant-picker:hover),
+:deep(.ant-form-item-has-error .ant-input:hover) {
+  border-color: #ff4d4f;
+  box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.1);
+}

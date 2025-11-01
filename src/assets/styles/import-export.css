@@ -1,0 +1,23 @@
+.export-button,
+.import-button {
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  color: #262626;
+  font-weight: 500;
+  height: 32px;
+  padding: 0 15px;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+.export-button:hover,
+.import-button:hover {
+  background: #fff;
+  border-color: #1890ff;
+  color: #1890ff;
+}
+
+.export-button:active,
+.import-button:active {
+  transform: translateY(1px);
+}
