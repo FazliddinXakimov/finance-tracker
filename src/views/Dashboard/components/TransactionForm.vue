@@ -30,14 +30,7 @@
       </a-form-item>
 
       <a-form-item label="Сумма" name="amount" :validate-status="errors.amount ? 'error' : ''" :help="errors.amount">
-        <a-input-number
-          v-model:value="amount"
-          :min="0"
-          :precision="2"
-          style="width: 100%"
-          placeholder="0.00"
-          @input="handleAmountInput"
-        />
+        <a-input-number v-model:value="amount" :min="1" style="width: 100%" />
       </a-form-item>
 
       <a-form-item label="Дата" name="date" :validate-status="errors.date ? 'error' : ''" :help="errors.date">
@@ -125,17 +118,6 @@ const formData = computed(() => ({
 }))
 
 const categoryOptions = computed(() => getCategoriesByType(type.value))
-
-const handleAmountInput = (value: any) => {
-  // a-input-number already prevents non-numeric input
-  // This is an extra safeguard to ensure only numbers are allowed
-  if (value !== null && value !== undefined) {
-    const numValue = Number(value)
-    if (!isNaN(numValue)) {
-      amount.value = numValue
-    }
-  }
-}
 
 const handleTypeChange = () => {
   category.value = undefined
