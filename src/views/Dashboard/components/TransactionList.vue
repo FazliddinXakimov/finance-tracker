@@ -308,7 +308,7 @@ const handleFilter = async () => {
 
 const handleClearFilters = () => {
   filters.value = {}
-  transactionStore.fetchTransactions()
+  transactionStore.fetchTransactions({})
 }
 
 const handleFormSuccess = () => {
